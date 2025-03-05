@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Function</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Sample Data</h1>
+
+  <input type="text" id="search-bar" class="search-input" placeholder="Search Users..." />
+
+  <div class="button-container">
+    <button id="grid-view-btn">Grid View</button>
+    <button id="table-view-btn">Table View</button>
+  </div>
+
+  <div id="users-grid" class="user-grid"></div>
+
+  <table id="users-table" class="user-table" style="display: none;">
+    <thead>
+      <tr>
+        <th><button id="sort-btn">Name ▲</button></th>
+        <th>Email</th>
+        <th>UserName</th>
+        <th>Address & Street</th>
+        <th>Suite</th>
+        <th>City</th>
+        <th>ZipCode</th>
+        <th>Phone</th>
+        <th>Website</th>
+        <th>Company Name</th>
+        <th>Company CatchPhrase</th>
+        <th>Company BS</th>
+        <th>View Details</th>
+      </tr>
+    </thead>
+    <tbody id="users-table-body"></tbody>
+  </table>
+
+  <div id="user-details" style="display: none;">
+    <table id="user-table" class="user-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>UserName</th>
+          <th>Address & Street</th>
+          <th>Suite</th>
+          <th>City</th>
+          <th>ZipCode</th>
+          <th>Phone</th>
+          <th>Website</th>
+          <th>Company Name</th>
+          <th>Company CatchPhrase</th>
+          <th>Company BS</th>
+        </tr>
+      </thead>
+      <tbody id="users-table-body">
+        <td id="user-name"></td>
+        <td id="user-email"></td>
+        <td id="user-username"></td>
+        <td id="address-street"></td>
+        <td id="address-suite"></td>
+        <td id="address-city"></td>
+        <td id="address-zipcode"></td>
+        <td id="user-phone"></td>
+        <td id="user-website"></td>
+        <td id="user-companyname"></td>
+        <td id="user-comapnycatchphrase"></td>
+        <td id="user-comapnybs"></td>
+      </tbody>
+    </table>
+    <button id="show-todos">Show Todos</button>
+    <button id="show-posts">Show Posts</button>
+
+    <div id="todos" style="display:none">
+      <h3>Todos</h3>
+      <ul id="todos-list"></ul>
+    </div>
+
+    <div id="posts" style="display: none;">
+      <h3>Posts</h3>
+      <ul id="posts-list"></ul>
+    </div>
+  </div>
+
+  <div id="loading" style="text-align: center; margin: 20px; background-color: rgb(173, 160, 185);">
+    Loading more items...
+</div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
